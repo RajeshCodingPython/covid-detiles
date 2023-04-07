@@ -1,0 +1,65 @@
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+
+GET http://localhost:3000/states/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
+
+
+###
+
+GET http://localhost:3000/states/8/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
+
+###
+
+POST http://localhost:3000/districts/
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
+
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+
+GET http://localhost:3000/districts/332/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
+
+###
+
+DELETE http://localhost:3000/districts/3/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
+
+###
+
+PUT http://localhost:3000/districts/322/
+Content-Type:  application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
+ 
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+
+###
+
+GET http://localhost:3000/states/20/stats/
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjgwODkyMjUzfQ.4K7RQTddRmzdvhVaWt2PglU1br02gMaR5pCQz5B-k9s
